@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}!
+  p Created by Or Harazi (phone number: +972526560180)
+  br
+  br
+  h4 GET <a href="/posts">/posts</a> - returns json with array of 10 recent posts.
+  h4 POST <a href="/posts">/posts</a> - create new post, require request body of {title: "title", body: "body", username: "username"}.
+  h4 GET <a href="/postsnumber">/postsnumber</a> - returns json with object of total posts number.
+  h4 GET <a href="/statistics/topcreators">/statistics/topcreators</a> - returns json with object with the top 10 of post creators.
+  h4 GET <a href="/statistics/runtimes">/statistics/runtimes</a> - returns json with array of the average run-time for each function.
+
+  
